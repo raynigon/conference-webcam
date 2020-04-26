@@ -1,0 +1,482 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		261B94A524558F980050977C /* Info.plist in CopyFiles */ = {isa = PBXBuildFile; fileRef = 261B94A424558F920050977C /* Info.plist */; };
+		261B94B4245592D10050977C /* webcam.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 261B94B2245592D10050977C /* webcam.cpp */; };
+		261B94B7245596DB0050977C /* screen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 261B94B5245596DB0050977C /* screen.cpp */; };
+		261B94BC2455A1890050977C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 261B94BB2455A1890050977C /* QuartzCore.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		266F4EA4245584DA006A6AF7 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 266F4EA3245584DA006A6AF7 /* main.cpp */; };
+		2679323B2455A920008D0C09 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2679323A2455A920008D0C09 /* CoreGraphics.framework */; };
+		2679323D2455C36B008D0C09 /* IOSurface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2679323C2455C36B008D0C09 /* IOSurface.framework */; };
+		267932412455CAC0008D0C09 /* frame_combinator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2679323F2455CAC0008D0C09 /* frame_combinator.cpp */; };
+		267932482455DC08008D0C09 /* frame_resize.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 267932462455DC08008D0C09 /* frame_resize.cpp */; };
+		26B0649C2455E0D5009B12AD /* background.jpg in CopyFiles */ = {isa = PBXBuildFile; fileRef = 26B0649B2455E0A3009B12AD /* background.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		266F4E9E245584DA006A6AF7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				26B0649C2455E0D5009B12AD /* background.jpg in CopyFiles */,
+				261B94A524558F980050977C /* Info.plist in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		261B94A424558F920050977C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		261B94AE245592B10050977C /* input_device.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = input_device.hpp; sourceTree = "<group>"; };
+		261B94B2245592D10050977C /* webcam.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = webcam.cpp; sourceTree = "<group>"; };
+		261B94B3245592D10050977C /* webcam.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = webcam.hpp; sourceTree = "<group>"; };
+		261B94B5245596DB0050977C /* screen.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = screen.cpp; sourceTree = "<group>"; };
+		261B94B6245596DB0050977C /* screen.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = screen.hpp; sourceTree = "<group>"; };
+		261B94B92455A1830050977C /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
+		261B94BB2455A1890050977C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		266F4EA0245584DA006A6AF7 /* ConferenceWebCam */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ConferenceWebCam; sourceTree = BUILT_PRODUCTS_DIR; };
+		266F4EA3245584DA006A6AF7 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		266F4EAA245585E1006A6AF7 /* setup-dev.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "setup-dev.sh"; sourceTree = "<group>"; };
+		2679323A2455A920008D0C09 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2679323C2455C36B008D0C09 /* IOSurface.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOSurface.framework; path = System/Library/Frameworks/IOSurface.framework; sourceTree = SDKROOT; };
+		2679323F2455CAC0008D0C09 /* frame_combinator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = frame_combinator.cpp; sourceTree = "<group>"; };
+		267932402455CAC0008D0C09 /* frame_combinator.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = frame_combinator.hpp; sourceTree = "<group>"; };
+		267932442455D3F5008D0C09 /* frame_source.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = frame_source.hpp; sourceTree = "<group>"; };
+		267932462455DC08008D0C09 /* frame_resize.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = frame_resize.cpp; sourceTree = "<group>"; };
+		267932472455DC08008D0C09 /* frame_resize.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = frame_resize.hpp; sourceTree = "<group>"; };
+		26B0649B2455E0A3009B12AD /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		266F4E9D245584DA006A6AF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2679323D2455C36B008D0C09 /* IOSurface.framework in Frameworks */,
+				2679323B2455A920008D0C09 /* CoreGraphics.framework in Frameworks */,
+				261B94BC2455A1890050977C /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		261B94B1245592B40050977C /* input */ = {
+			isa = PBXGroup;
+			children = (
+				261B94AE245592B10050977C /* input_device.hpp */,
+				261B94B2245592D10050977C /* webcam.cpp */,
+				261B94B3245592D10050977C /* webcam.hpp */,
+				261B94B5245596DB0050977C /* screen.cpp */,
+				261B94B6245596DB0050977C /* screen.hpp */,
+			);
+			path = input;
+			sourceTree = "<group>";
+		};
+		261B94B82455A1830050977C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2679323C2455C36B008D0C09 /* IOSurface.framework */,
+				2679323A2455A920008D0C09 /* CoreGraphics.framework */,
+				261B94BB2455A1890050977C /* QuartzCore.framework */,
+				261B94B92455A1830050977C /* Quartz.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		266F4E97245584DA006A6AF7 = {
+			isa = PBXGroup;
+			children = (
+				26B0649B2455E0A3009B12AD /* background.jpg */,
+				261B94A424558F920050977C /* Info.plist */,
+				266F4EAA245585E1006A6AF7 /* setup-dev.sh */,
+				266F4EA2245584DA006A6AF7 /* ConferenceWebCam */,
+				266F4EA1245584DA006A6AF7 /* Products */,
+				261B94B82455A1830050977C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		266F4EA1245584DA006A6AF7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				266F4EA0245584DA006A6AF7 /* ConferenceWebCam */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		266F4EA2245584DA006A6AF7 /* ConferenceWebCam */ = {
+			isa = PBXGroup;
+			children = (
+				267932422455D3E3008D0C09 /* general */,
+				2679323E2455CA65008D0C09 /* transform */,
+				261B94B1245592B40050977C /* input */,
+				266F4EA3245584DA006A6AF7 /* main.cpp */,
+			);
+			path = ConferenceWebCam;
+			sourceTree = "<group>";
+		};
+		2679323E2455CA65008D0C09 /* transform */ = {
+			isa = PBXGroup;
+			children = (
+				2679323F2455CAC0008D0C09 /* frame_combinator.cpp */,
+				267932402455CAC0008D0C09 /* frame_combinator.hpp */,
+				267932462455DC08008D0C09 /* frame_resize.cpp */,
+				267932472455DC08008D0C09 /* frame_resize.hpp */,
+			);
+			path = transform;
+			sourceTree = "<group>";
+		};
+		267932422455D3E3008D0C09 /* general */ = {
+			isa = PBXGroup;
+			children = (
+				267932442455D3F5008D0C09 /* frame_source.hpp */,
+			);
+			path = general;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		266F4E9F245584DA006A6AF7 /* ConferenceWebCam */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 266F4EA7245584DB006A6AF7 /* Build configuration list for PBXNativeTarget "ConferenceWebCam" */;
+			buildPhases = (
+				266F4E9C245584DA006A6AF7 /* Sources */,
+				266F4E9D245584DA006A6AF7 /* Frameworks */,
+				266F4E9E245584DA006A6AF7 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ConferenceWebCam;
+			productName = ConferenceWebCam;
+			productReference = 266F4EA0245584DA006A6AF7 /* ConferenceWebCam */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		266F4E98245584DA006A6AF7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Simon Schneider";
+				TargetAttributes = {
+					266F4E9F245584DA006A6AF7 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+				};
+			};
+			buildConfigurationList = 266F4E9B245584DA006A6AF7 /* Build configuration list for PBXProject "ConferenceWebCam" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 266F4E97245584DA006A6AF7;
+			productRefGroup = 266F4EA1245584DA006A6AF7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				266F4E9F245584DA006A6AF7 /* ConferenceWebCam */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		266F4E9C245584DA006A6AF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				266F4EA4245584DA006A6AF7 /* main.cpp in Sources */,
+				267932482455DC08008D0C09 /* frame_resize.cpp in Sources */,
+				267932412455CAC0008D0C09 /* frame_combinator.cpp in Sources */,
+				261B94B4245592D10050977C /* webcam.cpp in Sources */,
+				261B94B7245596DB0050977C /* screen.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		266F4EA5245584DB006A6AF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		266F4EA6245584DB006A6AF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		266F4EA8245584DB006A6AF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				"HEADER_SEARCH_PATHS[arch=*]" = /usr/local/Cellar/opencv/4.3.0/include/opencv4;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				"LIBRARY_SEARCH_PATHS[arch=*]" = /usr/local/Cellar/opencv/4.3.0/lib;
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-I/usr/local/Cellar/opencv/4.3.0/include/opencv4/opencv",
+					"-I/usr/local/Cellar/opencv/4.3.0/include/opencv4",
+					"-L/usr/local/Cellar/opencv/4.3.0/lib",
+					"-lopencv_gapi",
+					"-lopencv_stitching",
+					"-lopencv_alphamat",
+					"-lopencv_aruco",
+					"-lopencv_bgsegm",
+					"-lopencv_bioinspired",
+					"-lopencv_ccalib",
+					"-lopencv_dnn_objdetect",
+					"-lopencv_dnn_superres",
+					"-lopencv_dpm",
+					"-lopencv_highgui",
+					"-lopencv_face",
+					"-lopencv_freetype",
+					"-lopencv_fuzzy",
+					"-lopencv_hfs",
+					"-lopencv_img_hash",
+					"-lopencv_intensity_transform",
+					"-lopencv_line_descriptor",
+					"-lopencv_quality",
+					"-lopencv_rapid",
+					"-lopencv_reg",
+					"-lopencv_rgbd",
+					"-lopencv_saliency",
+					"-lopencv_sfm",
+					"-lopencv_stereo",
+					"-lopencv_structured_light",
+					"-lopencv_phase_unwrapping",
+					"-lopencv_superres",
+					"-lopencv_optflow",
+					"-lopencv_surface_matching",
+					"-lopencv_tracking",
+					"-lopencv_datasets",
+					"-lopencv_text",
+					"-lopencv_dnn",
+					"-lopencv_plot",
+					"-lopencv_videostab",
+					"-lopencv_videoio",
+					"-lopencv_xfeatures2d",
+					"-lopencv_shape",
+					"-lopencv_ml",
+					"-lopencv_ximgproc",
+					"-lopencv_video",
+					"-lopencv_xobjdetect",
+					"-lopencv_objdetect",
+					"-lopencv_calib3d",
+					"-lopencv_imgcodecs",
+					"-lopencv_features2d",
+					"-lopencv_flann",
+					"-lopencv_xphoto",
+					"-lopencv_photo",
+					"-lopencv_imgproc",
+					"-lopencv_core",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		266F4EA9245584DB006A6AF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				"HEADER_SEARCH_PATHS[arch=*]" = /usr/local/Cellar/opencv/4.3.0/include/opencv4;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				"LIBRARY_SEARCH_PATHS[arch=*]" = /usr/local/Cellar/opencv/4.3.0/lib;
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-I/usr/local/Cellar/opencv/4.3.0/include/opencv4/opencv",
+					"-I/usr/local/Cellar/opencv/4.3.0/include/opencv4",
+					"-L/usr/local/Cellar/opencv/4.3.0/lib",
+					"-lopencv_gapi",
+					"-lopencv_stitching",
+					"-lopencv_alphamat",
+					"-lopencv_aruco",
+					"-lopencv_bgsegm",
+					"-lopencv_bioinspired",
+					"-lopencv_ccalib",
+					"-lopencv_dnn_objdetect",
+					"-lopencv_dnn_superres",
+					"-lopencv_dpm",
+					"-lopencv_highgui",
+					"-lopencv_face",
+					"-lopencv_freetype",
+					"-lopencv_fuzzy",
+					"-lopencv_hfs",
+					"-lopencv_img_hash",
+					"-lopencv_intensity_transform",
+					"-lopencv_line_descriptor",
+					"-lopencv_quality",
+					"-lopencv_rapid",
+					"-lopencv_reg",
+					"-lopencv_rgbd",
+					"-lopencv_saliency",
+					"-lopencv_sfm",
+					"-lopencv_stereo",
+					"-lopencv_structured_light",
+					"-lopencv_phase_unwrapping",
+					"-lopencv_superres",
+					"-lopencv_optflow",
+					"-lopencv_surface_matching",
+					"-lopencv_tracking",
+					"-lopencv_datasets",
+					"-lopencv_text",
+					"-lopencv_dnn",
+					"-lopencv_plot",
+					"-lopencv_videostab",
+					"-lopencv_videoio",
+					"-lopencv_xfeatures2d",
+					"-lopencv_shape",
+					"-lopencv_ml",
+					"-lopencv_ximgproc",
+					"-lopencv_video",
+					"-lopencv_xobjdetect",
+					"-lopencv_objdetect",
+					"-lopencv_calib3d",
+					"-lopencv_imgcodecs",
+					"-lopencv_features2d",
+					"-lopencv_flann",
+					"-lopencv_xphoto",
+					"-lopencv_photo",
+					"-lopencv_imgproc",
+					"-lopencv_core",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		266F4E9B245584DA006A6AF7 /* Build configuration list for PBXProject "ConferenceWebCam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				266F4EA5245584DB006A6AF7 /* Debug */,
+				266F4EA6245584DB006A6AF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		266F4EA7245584DB006A6AF7 /* Build configuration list for PBXNativeTarget "ConferenceWebCam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				266F4EA8245584DB006A6AF7 /* Debug */,
+				266F4EA9245584DB006A6AF7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 266F4E98245584DA006A6AF7 /* Project object */;
+}
